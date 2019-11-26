@@ -17,7 +17,7 @@ import router from '@/router'
 export const TOKEN_KEY: string = 'token'
 export const setToken = (token: string) => {
     Cookies.set(TOKEN_KEY, token, { expires: cookieExpires || 1 })
-    router.replace({name: '/index'})
+    router.replace({name: '/home'})
 }
 export const getToken = () => {
     const token = Cookies.get(TOKEN_KEY)

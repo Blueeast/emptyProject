@@ -1,5 +1,5 @@
 <template>
-  <div class="index-wrap">
+  <div class="home-wrap">
     {{data.pageName}}
   </div>
 </template>
@@ -7,10 +7,10 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator"
 @Component({})
-export default class Index extends Vue {
+export default class Home extends Vue {
   // data
-  data: IndexData = {
-    pageName: 'index'
+  data: HomeData = {
+    pageName: 'home'
   }
   created() {
     //
@@ -26,12 +26,12 @@ export default class Index extends Vue {
     //
   }
 }
-export class IndexData {
+export class HomeData {
   'pageName': string
 }
 </script>
 
 <style lang="scss">
-  @import './index.scss';
+  @import './home.scss';
 </style>
 
